@@ -5,7 +5,6 @@ import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
 
 const useStyles = makeStyles({
   root: {
@@ -67,7 +66,6 @@ function StyledRadio(props) {
 export default function LocationCheck() {
   return (
     <FormControl component="fieldset">
-      {/* <FormLabel component="legend">Gender</FormLabel> */}
       <RadioGroup defaultValue="Within McMaster" aria-label="gender" name="customized-radios">
         <FormControlLabel value="Within McMaster" control={<StyledRadio />} label="Within McMaster" />
         <FormControlLabel value="Outside McMaster" control={<StyledRadio />} label="Outside McMaster" />

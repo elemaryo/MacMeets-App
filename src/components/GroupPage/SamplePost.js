@@ -3,7 +3,7 @@ import moment from "moment";
 import Badge from '@material-ui/core/Badge';
 import Avatar from '@material-ui/core/Avatar';
 import Omar from '../../images/omar.jpg';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import { Bookmark, VerifiedUser } from "@material-ui/icons";
 import { IconButton, Typography } from "@material-ui/core";
 import Menu from '@material-ui/core/Menu';
