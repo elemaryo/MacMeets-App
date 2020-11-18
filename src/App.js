@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import HomePage from './components/HomePage/HomePage';
+import Navbar from './components/HomePage/Navbar';
+import GroupPage from './components/GroupPage/GroupPage';
+import {
+  HashRouter as Router,
+  Route
+} from 'react-router-dom';
+import Footer from './components/NavItems/Footer';
+import CreateGroup from './components/CreateGroup/CreateGroup'
+import SearchPage from './components/SearchPage/SearchPage';
+import McMasterArt from './components/GroupPage/McMasterArt';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar/>
+        <Route exact path="/" component={HomePage}/>
+        <Route exact path="/Search Page" component={SearchPage}/>
+        <Route exact path="/Create a group" component={CreateGroup}/>
+        <Route exact path="/Group Page" component={GroupPage}/>
+        <Route exact path="/Art Page" component={McMasterArt}/>
+      </Router>
+      <Footer/>
     </div>
   );
 }
+
 
 export default App;
