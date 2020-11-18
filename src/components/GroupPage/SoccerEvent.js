@@ -18,10 +18,7 @@ import chad from '../../images/chad.png';
 import han from '../../images/han.png';
 import kelly from '../../images/kelly.png';
 import yena from '../../images/yena.png';
-import coding from "../../images/coding.jpeg";
-import {
-  NavLink,
-} from 'react-router-dom';
+import soccer from "../../images/soccer.jpg";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(4),
   },
   cardGrid: {
-    marginLeft:"10px"
+    marginLeft:"35%"
   },
   card: {
     height: '100%',
@@ -61,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function SearchEvent() {
+export default function SoccerEvent() {
   const classes = useStyles();
   const [state, setstate] = useState(false);
   const handleState = () => setstate(!state);
@@ -77,45 +74,41 @@ export default function SearchEvent() {
             <div>
             <Grid container spacing={4}>
               <Grid item xs={12} sm={6} md={4}>
-                <Card className={classes.card} onMouseOver={handleState} 
+              <Card className={classes.card} onMouseOver={handleState} 
                 onMouseOut={handleState}
                 raised={state}>
-                  <CardActionArea>
                   <CardMedia
                     className={classes.cardMedia}
-                    image={coding}
-                    title="Programming Event"
+                    image={soccer}
+                    title="Soccer Event"
                   />
                   <CardContent className={classes.cardContent}>
                   <Typography className={classes.typography} gutterBottom variant="h5" component="h2">
-                      Programming Principles @ Youtube
+                      Soccer Finals @ DBAC
                     </Typography>
                     <ul>
-                      <li><Typography className={classes.typography} align="left">SAT, NOV 21, 5:00 PM</Typography></li>
-                      <li><Typography className={classes.typography} align="left">McMaster Programming Club</Typography></li>
+                      <li><Typography className={classes.typography} align="left">TUES, NOV 24, 6:00 PM</Typography></li>
+                      <li><Typography className={classes.typography} align="left">McMaster Intramurals</Typography></li>
                     </ul>
                     <div className={classes.flex}>
                     <AvatarGroup max={4}>
+                        <Avatar alt="Yena Henderson" src={yena} />
+                        <Avatar alt="Kelly Walker" src={kelly} />
                         <Avatar alt="Annie Wing" src={annie} />
                         <Avatar alt="Chad Howard" src={chad} />
                         <Avatar alt="Han Baker" src={han} />
-                        <Avatar alt="Kelly Walker" src={kelly} />
-                        <Avatar alt="Yena Henderson" src={yena} />
                     </AvatarGroup>
-                    <Typography className={classes.typography} style={{padding:9}}>18</Typography>
+                    <Typography className={classes.typography} style={{padding:9}}>9</Typography>
                     </div>
                   </CardContent>
                   <CardActions>
-                    <Button onClick={handleClick} size="small" startIcon={<Add />} className={classes.buttonRed}>
+                  <Button onClick={handleClick} size="small" startIcon={<Add />} className={classes.buttonRed}>
                       Add
                     </Button>
-                    <NavLink to="/Group Page">
                     <Button size="small" startIcon={<PresentToAll />} className={classes.buttonRed}>
                       View
                     </Button>
-                    </NavLink>
                   </CardActions>
-                  </CardActionArea>
                 </Card>
               </Grid>
           </Grid>  

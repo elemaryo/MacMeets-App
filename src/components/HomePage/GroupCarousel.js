@@ -69,7 +69,7 @@ export default function GroupCarousel() {
         <Button style={{marginLeft:"50%"}} size="small" className={classes.buttonRed}>See all</Button>
         <div className="m20">
         <Grid container spacing={4}>
-              <Grid item xs={12} sm={6} md={4}>
+              {/* <Grid item xs={12} sm={6} md={4}>
               <Container>
               <NavLink to="/Art Page">
                 <Card className={classes.card} onMouseOver={handleState} 
@@ -86,7 +86,7 @@ export default function GroupCarousel() {
                 </NavLink>
                 <Typography className={classes.typography}>McMaster Art Club</Typography>
                 </Container>
-              </Grid>
+              </Grid> */}
 
 
               <Grid item xs={12} sm={6} md={4}>
@@ -108,9 +108,9 @@ export default function GroupCarousel() {
                 </Container>
               </Grid>
 
-              {/* <Grid item xs={12} sm={6} md={4}>
+              <Grid item xs={12} sm={6} md={4}>
               <Container>
-              <NavLink to="/Group Page">
+              <NavLink to="/Soccer Page">
                 <Card className={classes.card} onMouseOver={handleState} 
                 onMouseOut={handleState}
                 raised={state}>
@@ -125,7 +125,7 @@ export default function GroupCarousel() {
                 </NavLink>
                 <Typography className={classes.typography}>McMaster Soccer Club</Typography>
                 </Container>
-              </Grid> */}
+              </Grid>
           </Grid> 
           </div>
       </div>

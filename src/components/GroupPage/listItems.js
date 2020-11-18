@@ -9,6 +9,7 @@ import { Typography} from '@material-ui/core'
 import Avatar from '@material-ui/core/Avatar';
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import MPC from '../../images/MPC.jpg';
+import Soccer from '../../images/soccerclub.jpg';
 import Art from '../../images/McMasterArt.jpg';
 import annie from '../../images/annie.png';
 import chad from '../../images/chad.png';
@@ -54,6 +55,28 @@ export const groupInfo2 = (
   <ListItem inset>
     <ListItemText style={{paddingLeft: "50px"}} primary="1 member" />
     <Avatar style={{marginRight: "30px"}} alt="Omar Elemary" src={Omar} />
+  </ListItem>
+  {/* </div> */}
+  </div>
+)
+
+export const groupInfo3 = (
+  <div>
+    {/* {groupname} */}
+  <img width="200" src={Soccer} alt="McMaster Spccer Club"/>
+  <Typography>McMaster Soccer Club</Typography>
+  <Typography>DBAC, McMaster University EST</Typography>
+  {/* <div className="form_container">
+  <Typography>462 members</Typography> */}
+  <ListItem inset>
+    <ListItemText style={{paddingLeft: "50px"}} primary="30 members" />
+  <AvatarGroup style={{paddingRight: "30px"}} max={4}>
+    <Avatar alt="Yena Henderson" src={yena} />
+    <Avatar alt="Kelly Walker" src={kelly} />
+    <Avatar alt="Annie Wing" src={annie} />
+    <Avatar alt="Chad Howard" src={chad} />
+    <Avatar alt="Han Baker" src={han} />
+  </AvatarGroup>
   </ListItem>
   {/* </div> */}
   </div>

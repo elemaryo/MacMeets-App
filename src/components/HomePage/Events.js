@@ -19,8 +19,12 @@ import han from '../../images/han.png';
 import kelly from '../../images/kelly.png';
 import yena from '../../images/yena.png';
 import bridges from '../../images/Bridges-McMaster.jpeg';
+import coding from "../../images/coding.jpeg";
 import soccer from "../../images/soccer.jpg";
 import enactus from "../../images/enactus.jpg";
+import {
+  NavLink,
+} from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -125,14 +129,57 @@ export default function Album() {
                     <Button onClick={handleClick} size="small" startIcon={<Add />} className={classes.buttonRed}>
                       Add
                     </Button>
-                    <Button size="small" startIcon={<PresentToAll />} className={classes.buttonRed}>
+                    {/* <Button size="small" startIcon={<PresentToAll />} className={classes.buttonRed}>
                       View
-                    </Button>
+                    </Button> */}
                   </CardActions>
                 </Card>
               </Grid>
 
               <Grid item xs={12} sm={6} md={4}>
+                <Card className={classes.card} onMouseOver={handleState} 
+                onMouseOut={handleState}
+                raised={state}>
+                  <CardActionArea>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={coding}
+                    title="Programming Event"
+                  />
+                  <CardContent className={classes.cardContent}>
+                  <Typography className={classes.typography} gutterBottom variant="h5" component="h2">
+                      Programming Principles @ Youtube
+                    </Typography>
+                    <ul>
+                      <li><Typography className={classes.typography} align="left">SAT, NOV 21, 5:00 PM</Typography></li>
+                      <li><Typography className={classes.typography} align="left">McMaster Programming Club</Typography></li>
+                    </ul>
+                    <div className={classes.flex}>
+                    <AvatarGroup max={4}>
+                        <Avatar alt="Annie Wing" src={annie} />
+                        <Avatar alt="Chad Howard" src={chad} />
+                        <Avatar alt="Han Baker" src={han} />
+                        <Avatar alt="Kelly Walker" src={kelly} />
+                        <Avatar alt="Yena Henderson" src={yena} />
+                    </AvatarGroup>
+                    <Typography className={classes.typography} style={{padding:9}}>18</Typography>
+                    </div>
+                  </CardContent>
+                  <CardActions>
+                    <Button onClick={handleClick} size="small" startIcon={<Add />} className={classes.buttonRed}>
+                      Add
+                    </Button>
+                    <NavLink to="/Group Page">
+                    <Button size="small" startIcon={<PresentToAll />} className={classes.buttonRed}>
+                      View
+                    </Button>
+                    </NavLink>
+                  </CardActions>
+                  </CardActionArea>
+                </Card>
+              </Grid>
+
+              {/* <Grid item xs={12} sm={6} md={4}>
                 <Card className={classes.card} onMouseOver={handleState} 
                 onMouseOut={handleState}
                 raised={state}>
@@ -169,7 +216,7 @@ export default function Album() {
                     </Button>
                   </CardActions>
                 </Card>
-              </Grid>
+              </Grid> */}
 
               <Grid item xs={12} sm={6} md={4}>
                 <Card className={classes.card} onMouseOver={handleState} 
@@ -203,9 +250,11 @@ export default function Album() {
                   <Button onClick={handleClick} size="small" startIcon={<Add />} className={classes.buttonRed}>
                       Add
                     </Button>
+                    <NavLink to="/Soccer Page">
                     <Button size="small" startIcon={<PresentToAll />} className={classes.buttonRed}>
                       View
                     </Button>
+                    </NavLink>
                   </CardActions>
                 </Card>
               </Grid>

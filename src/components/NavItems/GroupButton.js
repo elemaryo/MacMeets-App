@@ -8,7 +8,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { Divider } from '@material-ui/core';
 import MPC from '../../images/MPC.jpg';
-import Art from '../../images/McMasterArt.jpg'
+import Art from '../../images/McMasterArt.jpg';
+import Soccer from '../../images/soccerclub.jpg';
 import Avatar from '@material-ui/core/Avatar';
 import {
     NavLink
@@ -52,6 +53,10 @@ export default function GroupButton() {
             <MenuItem onClick={handleClose}>
                 <ListItemIcon><Avatar alt="MPC" src={MPC} /></ListItemIcon>
                 <ListItemText>McMaster Programming Club</ListItemText></MenuItem></NavLink>
+                <NavLink to="/Soccer Page">
+                    <MenuItem onClick={handleClose}>
+                    <ListItemIcon><Avatar alt="MPC" src={Soccer} /></ListItemIcon>
+                    <ListItemText>McMaster Soccer Club</ListItemText></MenuItem></NavLink>
                 <NavLink to="/Art Page">
             <MenuItem onClick={handleClose}>
                 <ListItemIcon><Avatar alt="Art Club" src={Art} /></ListItemIcon>
