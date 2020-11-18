@@ -148,6 +148,7 @@ function getStepContent(stepIndex) {
         <TextField
           id="outlined-multiline-static"
           label="Required"
+          required
           helperText="Maximum 60 characters"
           fullWidth
           multiline
@@ -172,7 +173,7 @@ function getStepContent(stepIndex) {
           </div>
           <div className="width50">
           <form noValidate autoComplete="off">
-          <TextField variant="outlined" fullWidth required id="location"  label="Group Location" helperText="Please provide your group location" defaultValue="" />
+          <TextField variant="outlined" fullWidth id="location"  label="Group Location" helperText="Please provide your group location" defaultValue="" />
           </form>
           </div>
           <div className="form_container m20">
@@ -268,7 +269,7 @@ export default function CustomizedSteppers() {
           </div>
         )}
       </div>
-      <div className="pushFooter"></div>
+      <div className="pushFooter2"></div>
     </div>
   );
 }
