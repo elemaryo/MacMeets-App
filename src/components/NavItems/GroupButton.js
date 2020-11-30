@@ -57,10 +57,10 @@ export default function GroupButton() {
                     <MenuItem onClick={handleClose}>
                     <ListItemIcon><Avatar alt="MPC" src={Soccer} /></ListItemIcon>
                     <ListItemText>McMaster Soccer Club</ListItemText></MenuItem></NavLink>
-                <NavLink to="/Art Page">
+                {/* <NavLink to="/Art Page">
             <MenuItem onClick={handleClose}>
                 <ListItemIcon><Avatar alt="Art Club" src={Art} /></ListItemIcon>
-                <ListItemText>McMaster Art Club</ListItemText></MenuItem></NavLink>
+                <ListItemText>McMaster Art Club</ListItemText></MenuItem></NavLink> */}
             <Divider></Divider>
             <NavLink to="/Create a group">
             <MenuItem onClick={handleClose}>
